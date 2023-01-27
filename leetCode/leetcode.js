@@ -4,9 +4,6 @@ setTimeout(() => {
     let nav = document.querySelector('.navbar__1Bue');
     let navItem1 = document.querySelectorAll('.nav-item__5BvG');
     let navItem2 = document.querySelector('.ant-dropdown-trigger');
-    let notificationBell = document.querySelector('.notification-ctr__eDQh');
-    let navFireNum = document.querySelector('.counter__amcn');
-    let feedbackTab = document.querySelector('.feedback-tab');
 
     // tabs refrence
     let tabContainer = document.querySelector('.css-1lexzqe-TabHeaderContainer');
@@ -49,8 +46,6 @@ setTimeout(() => {
         for (i = 0; i < navItem1.length; i++)
             navItem1[i].style.color = "#fff";
         navItem2.style.color = "#fff";
-        notificationBell.style.border = "0px"
-        navFireNum.style.color = "rgb(255 164 0)";
 
         for (i = 1; i < nonActiveTabs.length; i++) {
             nonActiveTabs[i].style.color = "white";
@@ -114,6 +109,7 @@ setTimeout(() => {
     main();
     console.log("Nav theam applied");
 
+    // onclick events
     activeTabs.addEventListener('click', main());
-
+    // footerButtons.addEventListener('click', main());
 }, 5000)
